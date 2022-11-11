@@ -1,0 +1,238 @@
+@charset "UTF-8";
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+*::before,
+*::after {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+html {
+  font-family: "ヒラギノ角ゴ ProN", "游ゴシック", sans-serif;
+  color: #383e45;
+}
+
+a {
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+  color: inherit;
+}
+a:hover {
+  opacity: 0.6;
+}
+
+p {
+  font-weight: normal;
+}
+
+ul,
+ol {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+body {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+img {
+  border-style: none;
+}
+
+.p-navbar {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 4%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.p-navbar__logo {
+  width: 120px;
+  padding: 10px 0;
+  line-height: 1px;
+}
+
+.p-navbar__nav ul {
+  display: flex;
+  padding: 10px 0;
+}
+.p-navbar__nav ul li {
+  margin-left: 30px;
+}
+.p-navbar__nav ul li a {
+  display: block;
+  color: #24292e;
+}
+
+.p-mainvisual {
+  margin-bottom: 80px;
+}
+.p-mainvisual img {
+  width: 100%;
+  max-width: 1920px;
+  height: calc(100vh - 60px);
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: inline;
+}
+@media screen and (min-width: 600px) {
+  .p-mainvisual img {
+    height: 600px;
+  }
+}
+
+.p-about {
+  max-width: 960px;
+  margin: 0 auto 100px auto;
+  padding: 0 4%;
+  text-align: center;
+}
+
+.p-about__contents {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 600px) {
+  .p-about__contents {
+    flex-direction: row;
+  }
+}
+
+.p-about__text {
+  text-align: left;
+}
+.p-about__text p {
+  display: block;
+}
+
+.p-bicycle {
+  max-width: 960px;
+  margin: 0 auto 100px auto;
+  padding: 0 4%;
+  text-align: center;
+}
+
+ul.p-bicycle__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+ul.p-bicycle__list li {
+  width: 100%;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 600px) {
+  ul.p-bicycle__list {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  ul.p-bicycle__list li {
+    width: 32%;
+  }
+}
+
+.p-footer__copyright {
+  font-size: 0.5rem;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.c-title {
+  display: inline-block;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 60px;
+  border-bottom: solid 1px #383e45;
+}
+
+.c-title--content {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+.c-avator img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin-right: 0px;
+}
+@media screen and (min-width: 600px) {
+  .c-avator img {
+    margin-right: 30px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

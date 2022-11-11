@@ -1,0 +1,12 @@
+@use "../../foudation/mixin"as m;
+
+.c-avator img {
+    border-radius: 50%;
+    width: 100px; //projectに記載推奨
+    height: 100px; //projectに記載推奨
+    margin-right: 0px; //projectに記載推奨
+
+    @include m.mq(pc) {
+        margin-right: 30px; //projectに記載推奨
+    }
+}

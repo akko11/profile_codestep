@@ -1,0 +1,17 @@
+@use "../../foudation/mixin"as m;
+
+.p-mainvisual {
+    margin-bottom: 80px;
+
+    img {
+        width: 100%;
+        max-width: 1920px;
+        height: calc(100vh - 60px);
+        object-fit: cover;
+        display: inline;
+
+        @include m.mq(pc) {
+            height: 600px;
+        }
+    }
+}
